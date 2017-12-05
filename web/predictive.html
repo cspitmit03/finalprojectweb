@@ -28,6 +28,9 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script>
+        document.getElementById("demo").innerHTML = Date();
+        </script>
         <script src="jquery.js"></script>
         <script>
         $(function(){
@@ -72,45 +75,38 @@
         <h2>7 Day Forecast</h2>
         The following is a bike traffic forecast for the Seattle Region.
         <div class="row">
-            <div class="col-sm-6 features-box wow fadeInLeft">
+            <div class="col-sm-5 features-box wow fadeInLeft">
               <div class="row">
-                <div class="col-sm-3 features-box-icon">
-                  <i class="fa fa-map-o"></i>
+                <div class="col-sm-1 features-box-icon">
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-8">
+                  <h3>Seattle Counter Map</h3><p>
                   <img src = "https://www.seattle.gov/Images/Departments/SDOT/BikeProgram/bikecountersmap516.jpg">
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 features-box wow fadeInLeft">
+            <div class="col-sm-7 features-box wow fadeInLeft">
               <div class="row">
                 <div>
-                  Expected daily traffic per counter.
-                    <object data="../b.html" type="text/html"  style="float:left;width:100%;height:230px"></object>
+                  <h3>Expected daily traffic per counter.</h3>
+                    Today's Date is : <p id="demo"></p>
+                  <script>
+                  document.getElementById("demo").innerHTML = Date();
+                  </script>
+                  <object data="http://localhost:5006/Predict" width=100% height="600"></object>
                 </div>
               </div>
               <div class = "row">
                 <div>
                   <p><p>
                   <p><p>
-                    Bicyle traffic trend in Seattle (Yearly, Weekly)
-                  <img src="../2.png" width="600">
+                    <h3>Bicyle traffic trend in Seattle (Yearly, Weekly)</h3>
+                  <img src="../2.png" width=75%>
                 </div>
               </div>
             </div>
         </div>
 
-        <div>
-          <div>
-
-
-          </div>
-        </div>
-        <div>
-          <div>
-
-          </div>
-        </div>
         <!-- Footer -->
         <footer>
 	        <div class="container">
